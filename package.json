@@ -1,0 +1,20 @@
+{
+  "name": "@my-company/ds-tokens",
+  "version": "1.0.0",
+  "exports": {
+    "./custom-properties.css": {
+      "default": "./dist/custom-properties.css"
+    }
+  },
+  "publishConfig": {
+    "@my-company:registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {},
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  }
+}
